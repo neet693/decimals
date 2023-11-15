@@ -1,0 +1,47 @@
+:root {
+  --dblue: #60befa;
+  --dyellow: #f9e741;
+  --dhblue: #4584fb;
+}
+
+body {
+  background-color: var(--dblue);
+  font-family: "Poppins", "sans-serif";
+}
+
+.bg-transparent-scroll {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* You can adjust the alpha value for transparency */
+  transition: background-color 0.3s ease;
+}
+.nav-scrolled {
+  background-color: #ffffff; /* Change the background color when scrolled */
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.carousel-btn {
+  width: 24px;
+  height: 24px;
+  background-color: #3490dc; /* Adjust the color as needed */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.carousel-btn:hover {
+  background-color: #2779bd; /* Adjust the hover color as needed */
+}
