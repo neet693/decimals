@@ -12,6 +12,26 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-q5+Mh/TGxdJ4GXiDL3jG1U3U+Vf/Jz2vuhTbL4F8x2tLKMWEF2e6aOK4l1eFdHxCq2C5Mg7u/5ud5taIYx+rwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -64,7 +84,10 @@
     <!-- Content -->
     <div class="container mx-auto p-4">
       <!-- Section Hero Banner -->
-      <section class="flex p-8 justify-items-center items-center -my-24">
+      <section
+        class="flex p-8 justify-items-center items-center -my-24"
+        id="home"
+      >
         <!-- Hero Title Section (Left) -->
         <div class="flex-1 hero-title text-center">
           <h1 class="text-4xl font-bold text-white">Selamat Datang Mom's!</h1>
@@ -91,58 +114,628 @@
       </section>
 
       <!-- Section Keunggulan -->
-      <section
-        class="container mx-auto justify-items-center items-center p-8 mt-12"
-      >
+      <section class="container mx-auto p-8 mt-12">
         <h2 class="text-3xl font-bold mb-6 text-center text-white">
-          6 Keunggulan Kami
+          6 (Enam) Keunggulan Kami
         </h2>
 
-        <!-- Gambar-gambar yang dapat digeser -->
-        <div class="flex overflow-x-auto space-x-4 justify-center">
-          <!-- Gambar 1 -->
-          <div class="flex flex-col items-center w-40">
+        <!-- Slick Carousel Container -->
+        <div id="keunggulanCarousel" class="slick-carousel">
+          <!-- Keunggulan 1 -->
+          <div class="flex flex-col items-center">
             <img
               src="assets/d2.png"
               alt="Keunggulan 1"
-              class="w-full h-40 object-cover rounded-full mx-auto"
+              class="w-40 h-40 object-cover rounded-full mx-auto"
             />
-            <p class="bg-dblue p-2 text-center text-white mt-2">
-              Report Perkembangan Belajar Siswa
-            </p>
+            <p class="text-center text-white mt-2">Report Keunggulan Siswa</p>
           </div>
 
-          <!-- Gambar 2 -->
-          <div class="flex flex-col items-center w-40">
+          <!-- Keunggulan 2 -->
+          <div class="flex flex-col items-center">
             <img
-              src="assets/d2.png"
+              src="assets/d3.png"
               alt="Keunggulan 2"
-              class="w-full h-40 object-cover rounded-full mx-auto"
+              class="w-40 h-40 object-cover rounded-full mx-auto"
             />
-            <p class="bg-dblue p-2 text-center text-white mt-2">
-              Report Perkembangan Belajar Siswa
+            <p class="text-center text-white mt-2">Jadwal Les Fleksibel</p>
+          </div>
+
+          <!-- Keunggulan 3 -->
+          <div class="flex flex-col items-center">
+            <img
+              src="assets/d4.png"
+              alt="Keunggulan 3"
+              class="w-40 h-40 object-cover rounded-full mx-auto"
+            />
+            <p class="text-center text-white mt-2">Guru Datang Ke Rumah</p>
+          </div>
+
+          <!-- Keunggulan 4 -->
+          <div class="flex flex-col items-center">
+            <img
+              src="assets/d4.png"
+              alt="Keunggulan 4"
+              class="w-40 h-40 object-cover rounded-full mx-auto"
+            />
+            <p class="text-center text-white mt-2">
+              Gratis Biaya Pendaftaran/p>
             </p>
           </div>
 
-          <!-- Gambar 3 -->
-          <div class="flex flex-col items-center w-40">
+          <!-- Keunggulan 5 -->
+          <div class="flex flex-col items-center">
             <img
-              src="assets/d2.png"
-              alt="Keunggulan 3"
-              class="w-full h-40 object-cover rounded-full mx-auto"
+              src="assets/d4.png"
+              alt="Keunggulan 5"
+              class="w-40 h-40 object-cover rounded-full mx-auto"
             />
-            <p class="bg-dblue p-2 text-center text-white mt-2">
-              Report Perkembangan Belajar Siswa
-            </p>
+            <p class="text-center text-white mt-2">Konsultasi Pendidikan</p>
+          </div>
+          <!-- Keunggulan 6 -->
+          <div class="flex flex-col items-center">
+            <img
+              src="assets/d4.png"
+              alt="Keunggulan 6"
+              class="w-40 h-40 object-cover rounded-full mx-auto"
+            />
+            <p class="text-center text-white mt-2">Harga Terjangkau</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Regional Kami -->
+      <section class="container mx-auto p-8">
+        <img
+          src="assets/d5.png"
+          alt="Regional Map"
+          class="w-full rounded-md mb-6"
+        />
+      </section>
+
+      <!-- Section Program Private Decimal -->
+      <section class="py-8" id="program">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold mb-6 text-center text-white">
+            Program Private Decimal
+          </h2>
+
+          <!-- Carousel Container -->
+          <div id="programCarousel" class="slick-carousel">
+            <!-- Card 1 -->
+            <div class="mx-4 max-w-md">
+              <div
+                class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-dblue"
+              >
+                <!-- Card Title -->
+                <h3 class="text-xl font-bold mb-4">PAUD / TK</h3>
+
+                <!-- Card Image -->
+                <img
+                  src="assets/d6.png"
+                  alt="Gambar 1"
+                  class="h-40 object-contain rounded"
+                />
+
+                <!-- Card Description -->
+                <p class="text-gray-700 mt-4 mb-6">
+                  Deskripsi mengenai program private Decimal ini.
+                </p>
+
+                <!-- Button "Mendaftar Mudah" -->
+                <button
+                  class="mt-6 px-4 py-2 font-bold bg-yellow-200 text-blue-600 rounded-full"
+                >
+                  Mendaftar Mudah
+                </button>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="mx-4 max-w-md">
+              <div
+                class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-dblue"
+              >
+                <!-- Card Title -->
+                <h3 class="text-xl font-bold mb-4">PAUD / TK</h3>
+
+                <!-- Card Image -->
+                <img
+                  src="assets/d6.png"
+                  alt="Gambar 1"
+                  class="h-40 object-contain rounded"
+                />
+
+                <!-- Card Description -->
+                <p class="text-gray-700 mt-4 mb-6">
+                  Deskripsi mengenai program private Decimal ini.
+                </p>
+
+                <!-- Button "Mendaftar Mudah" -->
+                <button
+                  class="mt-6 px-4 py-2 font-bold bg-yellow-200 text-blue-600 rounded-full"
+                >
+                  Mendaftar Mudah
+                </button>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="mx-4 max-w-md">
+              <div
+                class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-dblue"
+              >
+                <!-- Card Title -->
+                <h3 class="text-xl font-bold mb-4">PAUD / TK</h3>
+
+                <!-- Card Image -->
+                <img
+                  src="assets/d6.png"
+                  alt="Gambar 1"
+                  class="h-40 object-contain rounded"
+                />
+
+                <!-- Card Description -->
+                <p class="text-gray-700 mt-4 mb-6">
+                  Deskripsi mengenai program private Decimal ini.
+                </p>
+
+                <!-- Button "Mendaftar Mudah" -->
+                <button
+                  class="mt-6 px-4 py-2 font-bold bg-yellow-200 text-blue-600 rounded-full"
+                >
+                  Mendaftar Mudah
+                </button>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="mx-4 max-w-md">
+              <div
+                class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-dblue"
+              >
+                <!-- Card Title -->
+                <h3 class="text-xl font-bold mb-4">PAUD / TK</h3>
+
+                <!-- Card Image -->
+                <img
+                  src="assets/d6.png"
+                  alt="Gambar 1"
+                  class="h-40 object-contain rounded"
+                />
+
+                <!-- Card Description -->
+                <p class="text-gray-700 mt-4 mb-6">
+                  Deskripsi mengenai program private Decimal ini.
+                </p>
+
+                <!-- Button "Mendaftar Mudah" -->
+                <button
+                  class="mt-6 px-4 py-2 font-bold bg-yellow-200 text-blue-600 rounded-full"
+                >
+                  Mendaftar Mudah
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Home Visit Siswa -->
+      <section class="container mx-auto p-8 text-center">
+        <h2 class="text-3xl font-bold mb-6 text-white">Home Visit Siswa</h2>
+
+        <!-- Container untuk Embed YouTube dan Paragraf Deskripsi -->
+        <div class="mx-auto max-w-3xl text-center">
+          <!-- Tambahkan text-center di sini -->
+
+          <!-- Embed YouTube di tengah secara horizontal -->
+          <div class="iframe-container mb-6 mx-auto">
+            <!-- Ganti 'VIDEO_ID' dengan ID video YouTube yang ingin disematkan -->
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              frameborder="0"
+              allowfullscreen
+              class="mx-auto"
+            ></iframe>
+          </div>
+
+          <!-- Paragraf Deskripsi -->
+          <p class="text-white">
+            Di kesempatan kali ini kami melakukan home visit ke rumah siswa
+            Decimals untuk bersilaturahmi dan melihat perkembangan belajar
+            siswa-siswa kami.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section Testimony -->
+      <section class="py-8" id="testimoni">
+        <div class="container mx-auto justify-around">
+          <h2 class="text-3xl font-bold mb-6 text-center text-white">
+            Testimony
+          </h2>
+
+          <!-- Slick Carousel Container -->
+          <div id="testimonyCarousel" class="slick-carousel">
+            <!-- Testimony Card 1 -->
+            <div class="mx-8 max-w-md">
+              <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                <!-- Card Header -->
+                <div class="flex items-center mb-4">
+                  <img
+                    src="path/to/user-photo-1.jpg"
+                    alt="User Photo"
+                    class="h-12 w-12 rounded-full mr-4"
+                  />
+                  <div>
+                    <p class="font-bold">Nama Orangtua</p>
+                    <p>
+                      <span class="font-semibold">Siswa dari Regional</span>
+                    </p>
+                    <span class="text-yellow-500">★★★★★</span>
+                  </div>
+                </div>
+
+                <!-- Card Body -->
+                <p class="text-gray-700 mb-4">Isi testimoni dari orangtua 1.</p>
+
+                <!-- Card Footer -->
+                <div class="flex justify-end">
+                  <p class="text-gray-500">Regional: Regional 1</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimony Card 2 -->
+            <div class="mx-8 max-w-md">
+              <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                <!-- Card Header -->
+                <div class="flex items-center mb-4">
+                  <img
+                    src="path/to/user-photo-1.jpg"
+                    alt="User Photo"
+                    class="h-12 w-12 rounded-full mr-4"
+                  />
+                  <div>
+                    <p class="font-bold">Nama Orangtua</p>
+                    <p>
+                      <span class="font-semibold">Siswa dari Regional</span>
+                    </p>
+                    <span class="text-yellow-500">★★★★★</span>
+                  </div>
+                </div>
+
+                <!-- Card Body -->
+                <p class="text-gray-700 mb-4">Isi testimoni dari orangtua 1.</p>
+
+                <!-- Card Footer -->
+                <div class="flex justify-end">
+                  <p class="text-gray-500">Regional: Regional 1</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimony Card 3 -->
+            <div class="mx-8 max-w-md">
+              <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                <!-- Card Header -->
+                <div class="flex items-center mb-4">
+                  <img
+                    src="path/to/user-photo-1.jpg"
+                    alt="User Photo"
+                    class="h-12 w-12 rounded-full mr-4"
+                  />
+                  <div>
+                    <p class="font-bold">Nama Orangtua</p>
+                    <p>
+                      <span class="font-semibold">Siswa dari Regional</span>
+                    </p>
+                    <span class="text-yellow-500">★★★★★</span>
+                  </div>
+                </div>
+
+                <!-- Card Body -->
+                <p class="text-gray-700 mb-4">Isi testimoni dari orangtua 1.</p>
+
+                <!-- Card Footer -->
+                <div class="flex justify-end">
+                  <p class="text-gray-500">Regional: Regional 1</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimony Card 4 -->
+            <div class="mx-8 max-w-md">
+              <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                <!-- Card Header -->
+                <div class="flex items-center mb-4">
+                  <img
+                    src="path/to/user-photo-1.jpg"
+                    alt="User Photo"
+                    class="h-12 w-12 rounded-full mr-4"
+                  />
+                  <div>
+                    <p class="font-bold">Nama Orangtua</p>
+                    <p>
+                      <span class="font-semibold">Siswa dari Regional</span>
+                    </p>
+                    <span class="text-yellow-500">★★★★★</span>
+                  </div>
+                </div>
+
+                <!-- Card Body -->
+                <p class="text-gray-700 mb-4">Isi testimoni dari orangtua 1.</p>
+
+                <!-- Card Footer -->
+                <div class="flex justify-end">
+                  <p class="text-gray-500">Regional: Regional 1</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimony Card 5 -->
+            <div class="mx-8 max-w-md">
+              <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                <!-- Card Header -->
+                <div class="flex items-center mb-4">
+                  <img
+                    src="path/to/user-photo-1.jpg"
+                    alt="User Photo"
+                    class="h-12 w-12 rounded-full mr-4"
+                  />
+                  <div>
+                    <p class="font-bold">Nama Orangtua</p>
+                    <p>
+                      <span class="font-semibold">Siswa dari Regional</span>
+                    </p>
+                    <span class="text-yellow-500">★★★★★</span>
+                  </div>
+                </div>
+
+                <!-- Card Body -->
+                <p class="text-gray-700 mb-4">Isi testimoni dari orangtua 1.</p>
+
+                <!-- Card Footer -->
+                <div class="flex justify-end">
+                  <p class="text-gray-500">Regional: Regional 1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Telah berkolaborasi dengan: -->
+      <section
+        class="p-8 mt-12 bg-white flex items-center justify-center rounded"
+      >
+        <h2 class="text-3xl font-bold mb-6 text-dblue mr-4">
+          Telah Berkolaborasi dengan:
+        </h2>
+
+        <!-- Sponsor 1 -->
+        <img
+          src="images/logo_partner/1.png"
+          alt="Sponsor 1"
+          class="h-16 w-16 object-contain"
+        />
+
+        <!-- Sponsor 2 -->
+        <img
+          src="images/logo_partner/2.png"
+          alt="Sponsor 2"
+          class="h-16 w-16 object-contain"
+        />
+
+        <!-- Sponsor 3 -->
+        <img
+          src="images/logo_partner/3.jpg"
+          alt="Sponsor 3"
+          class="h-16 w-16 object-contain"
+        />
+
+        <!-- Sponsor 4 -->
+        <img
+          src="images/logo_partner/4.png"
+          alt="Sponsor 4"
+          class="h-16 w-16 object-contain"
+        />
+      </section>
+
+      <!-- Section FAQ -->
+      <section class="container mx-auto p-8">
+        <h2 class="text-3xl font-bold mb-6 text-center text-white">
+          Pertanyaan yang sering di tanyakan?
+        </h2>
+
+        <!-- Pertanyaan 1 -->
+        <details class="mb-4">
+          <summary class="text-2xl font-bold text-white cursor-pointer">
+            Apa itu Decimals Indonesia?
+          </summary>
+          <p class="text-white mt-2">Decimals Indonesia adalah...</p>
+        </details>
+        <hr class="my-2" />
+
+        <!-- Pertanyaan 2 -->
+        <details class="mb-4">
+          <summary class="text-2xl font-bold text-white cursor-pointer">
+            Bagaimana cara mendaftar?
+          </summary>
+          <p class="text-white mt-2">Anda dapat mendaftar...</p>
+        </details>
+        <hr class="my-2" />
+
+        <!-- Pertanyaan 3 -->
+        <details class="mb-4">
+          <summary class="text-2xl font-bold text-white cursor-pointer">
+            Apakah ada jadwal fleksibel?
+          </summary>
+          <p class="text-white mt-2">
+            Ya, kami menyediakan jadwal yang fleksibel...
+          </p>
+        </details>
+        <hr class="my-2" />
+
+        <!-- Pertanyaan 4 -->
+        <details class="mb-4">
+          <summary class="text-2xl font-bold text-white cursor-pointer">
+            Berapa biaya program private?
+          </summary>
+          <p class="text-white mt-2">
+            Biaya program private Decimals adalah...
+          </p>
+        </details>
+        <hr class="my-2" />
+
+        <!-- Pertanyaan 5 -->
+        <details class="mb-4">
+          <summary class="text-2xl font-bold text-white cursor-pointer">
+            Apakah ada diskon untuk program tertentu?
+          </summary>
+          <p class="text-white mt-2">Ya, kami menyediakan diskon untuk...</p>
+        </details>
+        <hr class="my-2" />
+      </section>
+
+      <!-- Section Siswa Kami Bersekolah di -->
+      <section class="bg-white py-8 rounded-lg">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold mb-6 text-center text-dblue">
+            Siswa Kami Bersekolah di
+          </h2>
+
+          <!-- Grid untuk Logo Logo Sekolah -->
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            <!-- Ganti URL logo dan alt sesuai dengan kebutuhan -->
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/1.png"
+                alt="School Logo 1"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/2.png"
+                alt="School Logo 2"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/3.png"
+                alt="School Logo 3"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/4.png"
+                alt="School Logo 4"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/5.png"
+                alt="School Logo 5"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/6.png"
+                alt="School Logo 6"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/7.png"
+                alt="School Logo 7"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/8.png"
+                alt="School Logo 8"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/9.png"
+                alt="School Logo 9"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/10.png"
+                alt="School Logo 10"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/11.png"
+                alt="School Logo 11"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/12.png"
+                alt="School Logo 12"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/13.png"
+                alt="School Logo 13"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/14.png"
+                alt="School Logo 14"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/15.png"
+                alt="School Logo 15"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/16.png"
+                alt="School Logo 16"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="images/logo_sekolah/17.png"
+                alt="School Logo 17"
+                class="object-contain h-20 mx-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Section Sebelum Footer -->
       <section class="flex p-8 justify-items-center items-center">
-        <div class="flex-1 hero-image">
+        <div class="flex-1 hero-image -my-12">
           <img
-            src="assets/d1.png"
+            src="assets/d34.png"
             alt="Hero Image"
             class="w-2/3 object-cover object-center rounded-md"
           />
@@ -150,21 +743,17 @@
 
         <!-- Hero Title Section (Left) -->
         <div class="flex-1 hero-title text-center">
-          <h1 class="text-4xl font-bold text-white">Selamat Datang Mom's!</h1>
-          <p class="mt-4 mb-4 text-white">
-            Decimals indonesia merupakan bimbingan belajar dengan sistem private
-            (1 on 1 session) bersama dengan Tutor yang berpengalaman dan jadwal
-            les yang fleksibel
-          </p>
+          <h1 class="text-4xl font-bold text-white mb-8">
+            Yuk Belajar <br />
+            di Decimals Indonesia
+          </h1>
           <a
             href="#"
-            class="mt-6 px-4 py-2 font-bold bg-yellow-200 text-blue-600 rounded-full"
+            class="px-4 py-2 font-bold bg-yellow-200 text-blue-600 rounded-full"
             >Daftar Sekarang</a
           >
         </div>
       </section>
-
-      <!-- Footer -->
     </div>
 
     <!--Footer -->
@@ -209,48 +798,47 @@
       </div>
     </footer>
 
+    <!-- Slick Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
       defer
     ></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var navbar = document.querySelector("nav");
-
-        window.addEventListener("scroll", function () {
-          if (window.scrollY > 10) {
-            navbar.classList.add("bg-white", "shadow-md", "nav-scrolled");
-          } else {
-            navbar.classList.remove("bg-white", "shadow-md", "nav-scrolled");
-          }
+      $(document).ready(function () {
+        $("#testimonyCarousel").slick({
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          arrows: false,
+          dots: true,
         });
       });
     </script>
-
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        let currentSlide = 0;
-
-        function nextSlide() {
-          currentSlide = (currentSlide + 1) % 2;
-          updateSlide();
-        }
-
-        function prevSlide() {
-          currentSlide = (currentSlide - 1 + 2) % 2;
-          updateSlide();
-        }
-
-        function updateSlide() {
-          const translateValue = -50 * currentSlide;
-          document.querySelector(
-            ".flex"
-          ).style.transform = `translateX(${translateValue}%)`;
-        }
-
-        // Fungsi untuk memanggil nextSlide dan prevSlide
-        window.nextSlide = nextSlide;
-        window.prevSlide = prevSlide;
+      $(document).ready(function () {
+        $("#keunggulanCarousel").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          arrows: false,
+          dots: true,
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#programCarousel").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          arrows: false,
+          dots: true,
+        });
       });
     </script>
   </body>
